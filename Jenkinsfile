@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    tools {nodejs "NodeJS"}
+    tools {ant "ANT"}
     stages {   
         stage ("Source") {
             steps {
