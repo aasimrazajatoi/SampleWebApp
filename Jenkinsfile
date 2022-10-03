@@ -7,7 +7,7 @@ pipeline {
 //                 sh 'git clone '
 //                 sh 'npm install jest'
 //             }
-        }
+        
         stage ("build") {
             steps {
                 sh 'ant clean compile test package.war'
@@ -23,5 +23,5 @@ pipeline {
 //          stage ("deploy") {
             
 //          }
-//     }
+   }
 }
