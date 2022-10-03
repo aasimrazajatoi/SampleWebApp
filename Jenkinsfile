@@ -2,11 +2,11 @@ pipeline {
     agent any
     tools {nodejs "NodeJS"}
     stages {   
-//         stage ("Source") {
-//             steps {
-//                 sh 'git clone '
+        stage ("Source") {
+            steps {
+                sh 'git clone https://github.com/aasimrazajatoi/SampleWebApp.git'
 //                 sh 'npm install jest'
-//             }
+            }
         
         stage ("build") {
             steps {
