@@ -10,7 +10,7 @@ pipeline {
         
         stage ("build") {
             steps {
-                sh 'ant clean compile test package.war'
+                sh 'ant info'
             }
         }
 
