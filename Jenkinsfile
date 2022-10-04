@@ -4,24 +4,24 @@ pipeline {
     stages {   
         stage ("Source") {
             steps {
-                sh 'git clone https://github.com/aasimrazajatoi/SampleWebApp.git'
-//                 sh 'npm install jest'
+                sh 'git clone https://github.com/aasimrazajatoi/SampleWebApp.git'                 
+                
             }
         
         stage ("build") {
             steps {
-                sh 'ant info'
+                sh
             }
         }
 
-//         stage ("test") {
-//             steps {
-//                 sh 'npm test'
-//             }
-//         }
+        stage ("test") {
+            steps {
+                
+            }
+        }
 
-//          stage ("deploy") {
+         stage ("deploy") {
             
-//          }
+         }
    }
 }
